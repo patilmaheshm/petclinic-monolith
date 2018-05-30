@@ -23,7 +23,7 @@ podTemplate(label: 'pod-petclinic-app', containers: [
                 stage('Build a Maven project') {
                     sh 'mvn -B clean install -DskipTests=true'
                 }			
-               
+               }
              container('docker') {
 			
 			   
